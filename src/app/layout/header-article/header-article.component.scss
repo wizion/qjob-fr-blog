@@ -1,0 +1,146 @@
+$black-blue: #1D1539;
+$grey1:#9B99AA;
+$blue: #2E09B6;
+$grey3: #EDE8F7;
+$black2: #4F4F4F;
+$black-blue: #1D1539;
+$light-grey: #9B99AA;
+$sea_color: #13C98A;
+
+  section.progress-bar{
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    .indicator{
+      display: block;
+      width: 0;
+      background: rgb(38, 19, 126);
+      height: 4px;
+      position: fixed;
+      top: 0;
+      -webkit-transition: width .6s ease;
+      -o-transition: width .6s ease;
+      transition: width .6s ease;
+
+    }
+  }
+header.blog{
+grid-area: bh;
+    grid-template-areas: "logo nav burger";
+    grid-template-columns: 8em 1fr 1em;
+    position: absolute;
+    display: grid;
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    padding: 5px 3% 0;
+    width: 94%;
+  .logo{
+    grid-area: logo;
+    a{
+      color: white;
+      font-size: 28px;
+      text-decoration: none;
+      img{
+        max-width: 122px;
+      }
+      &:hover,&:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .burger{
+      grid-area: burger;
+      align-self: center;
+      color: #1d1539;
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
+      position: relative;
+      z-index: 999;
+  }
+  .menu-block {
+    grid-area: nav;
+      align-self: center;
+      color: #1d1539;
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
+      position: relative;
+      z-index: 999;
+  }
+}
+
+section#sidebar-blog{
+  z-index: 3;
+  background-color: black;
+  overflow: hidden;
+  padding: 90px 0;
+  position: fixed;
+  width: 100%;
+  transition: all ease-in-out;
+  display:none;
+  &.main{
+    background-color: #ffffff;
+    .additional_layer{
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    ul.nav{
+      li{
+        a{
+          color: $black2;
+        }
+      }
+    }
+  }
+  .additional_layer{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  ul.nav{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    li{
+      line-height: 30px;
+      list-style: none;
+      a{
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease-in-out;
+        &:active,&:hover{
+          color: silver;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 20em){
+   
+}
+@media screen and (max-width: 40em){
+   
+}
+@media screen and (max-width: 47.9375em){
+   
+}
+@media screen and (max-width: 60em){
+   
+}
+@media screen and (max-width:80em){
+  
+}
+@media screen and (max-width:120em){
+  
+}

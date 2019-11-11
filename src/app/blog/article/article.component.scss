@@ -1,0 +1,58 @@
+$black-blue: #1D1539;
+$grey1:#9B99AA;
+$blue: #2E09B6;
+$grey3: #EDE8F7;
+$black2: #4F4F4F;
+$black-blue: #1D1539;
+$light-grey: #9B99AA;
+$sea_color: #13C98A;
+
+
+
+  section.progress-bar{
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    .indicator{
+      display: block;
+      width: 0;
+      background: rgb(38, 19, 126);
+      height: 4px;
+      position: fixed;
+      top: 0;
+      -webkit-transition: width .6s ease;
+      -o-transition: width .6s ease;
+      transition: width .6s ease;
+    }
+  }
+
+
+
+@media screen and (max-width:120em){
+  
+}
+@media screen and (max-width:80em){
+    
+}
+@media screen and (max-width: 64em){
+     
+}
+
+@media screen and (max-width: 60em){
+   
+}
+
+@media screen and (max-width: 47.9375em){
+      
+}
+@media screen and (max-width: 40em){
+     
+}
+
+@media screen and (max-width: 30em){
+     
+}
+@media screen and (max-width: 20em){
+    
+}

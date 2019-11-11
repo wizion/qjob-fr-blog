@@ -1,0 +1,99 @@
+{
+  "posts": [
+		{ 
+			"id": 1,
+			"title": "Самые необычные задания 1",
+			"description": "Description Text",
+			"image": "http://blog.qjob.hu/assets/img/posts/main/8.png",
+			"date": "12 июля",
+			"present_video": false,
+			"alias": "first",
+			"big_poster": "http://blog.qjob.hu/assets/img/posts/1/main.png",
+			"small_poster": "http://blog.qjob.hu/assets/img/posts/1/fokep.jpg",
+			"views": "1234",
+			"content": "<app-likes></app-likes>",
+			"relevant_posts": ["2","3","4"]
+		},
+
+		{ 
+			"id": 3,
+			"title": "Самые необычные задания 3",
+			"description": "Description Text",
+			"image": "http://blog.qjob.hu/assets/img/posts/main/rel_bg.jpeg",
+			"date": "12 июля",
+			"present_video": false,
+			"alias": "thrid",
+			"big_poster": "http://blog.qjob.hu/assets/img/posts/1/main.png",
+			"small_poster": "http://blog.qjob.hu/assets/img/posts/1/fokep.jpg",
+			"views": "1234",
+			"content": "",
+			"relevant_posts": ["2","3","4"]
+		},
+		{ 
+			"id": 2,
+			"title": "Самые необычные задания 2",
+			"description": "Description Text",
+			"image": "http://blog.qjob.hu/assets/img/posts/main/rel__bg.png",
+			"date": "12 июля",
+			"present_video": false,
+			"alias": "second",
+			"big_poster": "http://blog.qjob.hu/assets/img/posts/1/main.png",
+			"small_poster": "http://blog.qjob.hu/assets/img/posts/1/fokep.jpg",
+			"slider": [
+					{
+						"slider_id": 1,
+						"slider_name":"Flovers",
+						"slider_option": [
+							{
+								"image": "assets/img/slider/1.jpg",
+								"thumbImage": "assets/img/slider/1_min.jpeg",
+								"alt": "alt of image",
+								"title": "title of image"
+							},
+							{
+								"image": "assets/img/slider/1.jpg",
+								"thumbImage": "assets/img/slider/1_min.jpeg",
+								"alt": "alt of image",
+								"title": "title of image"
+							}
+						]
+					},
+					{
+						"slider_id": 2,
+						"slider_name":"Flovers 2",
+						"slider_option": [
+							{
+								"image": "assets/img/slider/1.jpg",
+								"thumbImage": "assets/img/slider/1_min.jpeg",
+								"alt": "alt of image",
+								"title": "title of image"
+							},
+							{
+								"image": "assets/img/slider/1.jpg",
+								"thumbImage": "assets/img/slider/1_min.jpeg",
+								"alt": "alt of image",
+								"title": "title of image"
+							}
+						]
+					}
+			],
+			"views": "1234",
+			"content": "",
+			"relevant_posts": ["2","3","4"]
+		},
+		{ 
+			"id": 4,
+			"title": "Самые необычные задания 4",
+			"description": "Description Text",
+			"image": "http://blog.qjob.hu/assets/img/posts/main/rel_slide2.jpg",
+			"date": "12 июля",
+			"present_video": true,
+			"alias": "fourth",
+			"big_poster": "http://blog.qjob.hu/assets/img/posts/1/main.png",
+			"small_poster": "http://blog.qjob.hu/assets/img/posts/1/fokep.jpg",
+			"views": "1234",
+			"content": "",
+			"relevant_posts": ["2","3","4"]
+		}
+  ]
+}

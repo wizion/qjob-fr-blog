@@ -1,0 +1,9 @@
+p {
+  @include typographic;
+
+  margin: rem-calc(14 0);
+
+  @include breakpoint(medium up) {
+    margin: rem-calc(18 0);
+  }
+}

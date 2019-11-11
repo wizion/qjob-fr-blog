@@ -1,0 +1,117 @@
+.ui-calendar {
+  user-select: none;
+  font-size: rem-calc(12);
+
+  .dp-time-select-controls {
+    background: none;
+    border: none;
+  }
+}
+
+dp-day-calendar {
+  &.ui-calendar {
+    $font-color: #292c39;
+    $button-active: #13c98a;
+    $button-hover: #d1f8ea;
+
+    min-width: 210px;
+    padding: 10px;
+
+    .dp-day-calendar-container,
+    .dp-month-calendar-container {
+      background: none;
+      border: none;
+    }
+
+    .dp-calendar-nav-container {
+      border: none;
+      height: 32px;
+
+      .dp-nav-header {
+        button {
+          border: 0;
+          background-color: $button-active;
+          border-radius: 4px;
+          color: #fff;
+          padding: 6px 8px 4px 8px;
+          transition: color 0.28s ease, background-color 0.28s ease;
+
+          &:hover {
+            background-color: darken($button-active, 4);
+          }
+        }
+      }
+
+      .dp-nav-btns-container {
+        button {
+          border: 0;
+          background: none;
+          color: $font-color;
+          transition: color 0.28s ease;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          &:hover {
+            color: #2e09b6;
+          }
+        }
+      }
+    }
+
+    .dp-calendar-wrapper {
+      border: none;
+
+      .dp-weekdays {
+        font-size: 12px;
+      }
+
+      .dp-calendar-weekday {
+        border: none;
+        color: lighten($font-color, 50);
+        font-weight: normal;
+      }
+
+      .dp-calendar-day,
+      .dp-calendar-month {
+        border: none;
+        background-color: transparent;
+        border-radius: 6px;
+        transition: color 0.28s ease, background-color 0.28s ease, opacity 0.28s ease;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:hover {
+          background-color: $button-hover;
+        }
+
+        &.dp-current-month {
+          color: $font-color;
+        }
+
+        &.dp-prev-month {
+          opacity: 0.35;
+        }
+
+        &.dp-next-month {
+          opacity: 0.35;
+        }
+
+        &.dp-selected {
+          opacity: 1;
+          color: #fff;
+          background-color: $button-active;
+        }
+      }
+
+      .dp-calendar-month {
+        &.dp-current-month {
+          background-color: $button-hover;
+        }
+      }
+    }
+  }
+}

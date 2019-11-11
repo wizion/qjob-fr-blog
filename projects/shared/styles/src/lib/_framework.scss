@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+@import '~foundation-sites/scss/foundation';
+@import '~swiper/dist/css/swiper.min.css';
+
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+@include foundation-flex-classes;
+@include foundation-typography;
+@include foundation-responsive-embed;
+@include foundation-media-object;
+@include foundation-table;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+
+@import 'layout';
+@import 'elements/calendar';
+@import 'elements/inputs';
+
+@import 'typography/text_content';
+@import 'typography/headings';
+@import 'typography/paragraphs';

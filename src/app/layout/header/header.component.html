@@ -1,0 +1,93 @@
+<header>
+  <div class="grid-container">
+    <div class="header-grid">
+      <div class="burger">
+        <!--<ui-hamburger [active]="sideMenuVisible" (activeChange)="toggleSideMenu($event)"></ui-hamburger>-->
+      </div>
+      <div class="logo">
+        <a routerLink="/">
+          <img src="./assets/images/header-logo.png" alt="QJob">
+          <!--<svg-icon applyCss="applyCss" name="logo" [svgStyle]="{ 'width.px': '55', 'height.px': '22' }"></svg-icon>-->
+        </a>
+      </div>
+      <div class="menu">
+        <nav class="show-for-large">
+          <ul>
+            <li class="has-submenu" [class.active]="categoriesVisible">
+              <a (click)="toggleCategories()" #anchorElement>
+                <!--<svg-icon applyCss="applyCss" name="actionAdd" [svgStyle]="{ 'width.px': '12', 'height.px': '12' }"></svg-icon>
+                {{ 'MENU.HEADER.CREATE' | translate }}-->
+              </a>
+            </li>
+            <li><a routerLink="/tasks"><!--{{ 'MENU.HEADER.TASKS' | translate }}-->3</a></li>
+            <li><a routerLink="/executors"><!--{{ 'MENU.HEADER.EXECUTORS' | translate }}-->1</a></li>
+            <li *ngIf="loggedIn$ | async"><a><!--{{ 'MENU.HEADER.MY_TASKS' | translate }}-->2</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="actions">
+<!--        <qj-locale-switcher></qj-locale-switcher>
+        <qj-header-profile class="show-for-medium"></qj-header-profile>-->
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!--
+<header class="main">
+	<div class="grid-continer">
+		<div class="header-container">
+			<div class="burger">
+				<app-ui-hamburger></app-ui-hamburger>
+			</div>
+
+			<div class="logo">
+			  <a routerLink="/">
+			  	<img src="./assets/images/mainlogo.png" alt="">
+			  </a>
+			</div>
+			<div class="menu">
+				<nav class="show-for-large">
+				    <ul >
+				        <li class="has-submenu">
+				            <a routerLink="/create">
+			                    <svg viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="width: 12px; height: 12px;">
+			                        <path d="M7 0H5V4.99995H0V6.99995H5V12H7V6.99995H12V4.99995H7V0Z" ></path>
+			                    </svg>
+				                 Создать задание </a>
+				        </li>
+				        <li ><a routerlink="/tasks" href="/tasks">Все задания</a></li>
+				        <li ><a routerlink="/executors" href="/executors">Исполнители</a></li>
+	
+				    </ul>
+				</nav>
+			</div>
+			<div class="actions">
+				<app-language-switcher></app-language-switcher>
+				<div class="profile-navigation">
+					<div class="button">
+						<button class="bordered">
+							<span class="button-content-wrapper">
+								<span class="button-content">
+									Вход
+								</span>
+							</span>
+						</button>
+					</div>
+					<div class="plain-button">
+						<button class="plain">
+							<span class="button-content-wrapper">
+								<span class="button-content">
+									Регистрация
+								</span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>--->

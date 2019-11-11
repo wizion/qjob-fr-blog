@@ -1,0 +1,55 @@
+@font-face {
+  font-family: LetoSans;
+  src:
+    //local('LetoSans'),
+    url('/assets/fonts/LetoSans.woff2') format('woff2'),
+    url('/assets/fonts/LetoSans.woff') format('woff'),
+    url('/assets/fonts/LetoSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LetoSans;
+  src:
+    //local('LetoSans Bold'),
+    //local('LetoSans-Bold'),
+    url('/assets/fonts/LetoSans-Bold.woff2') format('woff2'),
+    url('/assets/fonts/LetoSans-Bold.woff') format('woff'),
+    url('/assets/fonts/LetoSans-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LetoSans;
+  src:
+    //local('LetoSans Thin'),
+    //local('LetoSans-Thin'),
+    url('/assets/fonts/LetoSans-Thin.woff2') format('woff2'),
+    url('/assets/fonts/LetoSans-Thin.woff') format('woff'),
+    url('/assets/fonts/LetoSans-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LetoSansCondensed;
+  src: url('/assets/fonts/LetoSansCondensed.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LetoSansCondensed;
+  src: url('/assets/fonts/LetoSansCondensed-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LetoSansCondensed;
+  src: url('/assets/fonts/LetoSansCondensed-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}

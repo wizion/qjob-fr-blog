@@ -1,0 +1,23 @@
+body {
+  &.disable-scroll {
+    overflow: hidden;
+
+    .main-content-layer {
+      overflow: hidden;
+    }
+  }
+}
+
+main {
+  .grid-container {
+    padding: rem-calc(0 8);
+
+    @include breakpoint(small up) {
+      padding: rem-calc(0 16);
+    }
+
+    @include breakpoint(xlarge up) {
+      padding: 0;
+    }
+  }
+}

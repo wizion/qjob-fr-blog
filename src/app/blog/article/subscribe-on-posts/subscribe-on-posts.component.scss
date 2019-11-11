@@ -1,0 +1,145 @@
+.subscribe-on-post {
+  max-width:  800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 70px 0 50px;
+  justify-content: center;
+  .subscribe-on-post__title {
+      font-size: 24px;
+      line-height: 28px;
+      color: #1D1539;
+    }
+  .suscribe-on-post__description{
+      color: #9B99AA;
+      font-size: 18px;
+      line-height: 21px;
+      width: 90%;
+  }
+  .subscribe-on-post__form {
+
+    .row {
+      .columns {
+        margin-left: 0px;
+        input{
+            font-family: LetoSans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+            font-size: 1.125rem;
+            font-weight: 700;
+
+         }
+        .u-full-width {
+          background: #EDE8F7;
+          border: 2px solid #EDE8F7;
+          box-sizing: border-box;
+          border-radius: 100px;
+          height: 56px;
+          font-weight: 500;
+          &::placeholder{
+            font-size: 16px;
+            line-height: 22px;
+            color: #9B99AA;
+            margin-left: 20px;
+          }
+        }
+        .button-primary {
+          background: #F8478D;
+          border-radius: 56px;
+          color: #ffffff;
+          height: 56px;
+          margin: 0 0 0 -45px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:120em){
+  .subscribe-on-post {}
+}
+@media screen and (max-width:80em){
+  .subscribe-on-post {
+    max-width: 630px;
+  }
+}
+@media screen and (max-width: 64em){
+  .subscribe-on-post {
+    }
+}
+
+@media screen and (max-width: 60em){
+  .subscribe-on-post {
+    max-width: 620px;
+    padding: 70px 15px 50px;
+  }
+}
+
+@media screen and (max-width: 47.9375em){
+  .subscribe-on-post {}
+}
+@media screen and (max-width: 40em){
+  .subscribe-on-post {
+    padding: 70px 5% 50px;
+    width: 90%;
+    .subscribe-on-post__title {
+        font-size: 24px;
+        line-height: 28px;
+        color: #1D1539;
+      }
+    .suscribe-on-post__description{
+        color: #9B99AA;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .subscribe-on-post__form {
+      .row {
+
+        .columns {
+          width: 100%;
+          margin-left: 0px;
+          margin-bottom: 20px;
+          .u-full-width {
+            background: #EDE8F7;
+            border: 2px solid #EDE8F7;
+            box-sizing: border-box;
+            border-radius: 100px;
+            height: 56px;
+          }
+          .button-primary {
+            margin:0;
+            width: 100%
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 30em){
+  .subscribe-on-post {}
+}
+@media screen and (max-width: 20em){
+  .subscribe-on-post {}
+}
+
+
+

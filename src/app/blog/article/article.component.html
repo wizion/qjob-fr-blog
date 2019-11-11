@@ -1,0 +1,9 @@
+    <section class="progress-bar">
+        <div class="indicator" [style.width]="indicatorHeight"></div>
+    </section>
+	<app-header-article></app-header-article>
+	<app-blog-main-image [offset]="offset" [Poster]="postdata"></app-blog-main-image>
+	<app-blog-text (scroll)="scrollVariable($event)"></app-blog-text>
+	<app-related-posts></app-related-posts>
+	<app-subscribe-on-posts></app-subscribe-on-posts>
+	<app-footer></app-footer>

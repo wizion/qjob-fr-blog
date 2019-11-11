@@ -1,0 +1,18 @@
+.head{
+		border: .0625rem solid #ede8f7;
+		box-sizing: border-box;
+		border-radius: 36px;
+
+		padding: 0.325em 0.7em 0.325em 0.7em;
+	.value{
+		cursor: pointer;
+		height: 100%;
+		position: relative;
+		z-index: 2;
+		display: inline-block;
+		margin-right: 0.25em;
+	}
+	.arrow{
+		display: inline-block;
+	}
+}

@@ -1,0 +1,30 @@
+$animation-speed: 0.28s;
+$animation-easing: ease;
+
+@function animate-list($list...) {
+  $new-list: ();
+  $separator: list-separator($list);
+  @each $type in $list {
+    $new-list: append($new-list, $type $animation-speed $animation-easing, $separator: $separator);
+  }
+  @return $new-list;
+}
+
+@mixin typographic {
+  font-size: rem-calc(12);
+  line-height: rem-calc(18);
+
+  @include breakpoint(medium up) {
+    font-size: rem-calc(13);
+    line-height: rem-calc(20);
+  }
+
+  @include breakpoint(large up) {
+    font-size: rem-calc(14);
+    line-height: rem-calc(22);
+  }
+}
+
+@mixin animate($list...) {
+  transition: animate-list($list...);
+}
