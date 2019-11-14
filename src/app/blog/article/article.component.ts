@@ -35,15 +35,10 @@ export class ArticleComponent implements OnInit {
 
 
 @HostListener('window:scroll', ['$event']) progressBarWidth(event){
-
-
     let scrollPercent = (window.scrollY / (this.document.body.scrollHeight - window.innerHeight))*100;;
     this.indicatorHeight = scrollPercent + '%';
     console.log(this.indicatorHeight);
   }
-
-
-
 
 
 scrollVariable(scroll: {offsetTopBodyText: number}){

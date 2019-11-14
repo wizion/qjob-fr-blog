@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
-  "compilerOptions": {
+  "compilerOptions":
+  {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -18,16 +19,11 @@
       "es2018",
       "dom"
     ],
-    "paths": {
-      "ui-button": [
-        "dist/ui-button"
-      ],
-      "ui-button/*": [
-        "dist/ui-button/*"
-      ]
-    }
+    "paths":
+    {}
   },
-  "angularCompilerOptions": {
+  "angularCompilerOptions":
+  {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
   }

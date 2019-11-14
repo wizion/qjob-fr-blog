@@ -1,39 +1,40 @@
-<app-header></app-header>
-<section class="main-news">
-
-
-	<ng-container *ngFor="let post of allPosts; let i = index">
-			<a *ngIf="i == 0" [routerLink]="['/blog', post.alias]" class="big-item" [style.backgroundImage]="'url('+ post.image +')'">
-
-				<div>
-					<h2>{{post.title}}</h2>
-					<p class="paragraph">
-					{{post.date}}
-					</p>
-				</div>
-			</a>
-
-
-		<div class="item" *ngIf="i > 0">
-			<a [routerLink]="['/blog', post.alias]" class="item-title">
-				<div class="image">
-					<img src="{{post.image}}" alt="">
-					<div *ngIf="post.present_video" class="is-video"></div>
-				</div>
-				<h3>{{post.title}}</h3>
-			</a>
-			<p class="paragraph">{{post.date}}</p>
-		</div>
-	</ng-container>
-</section>
-<section class="pagination">
-    <span class="arrow left"></span>
-    <span class="active">1</span>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <span class="nav_ext">...</span>
-    <a href="#">15</a>
-    <a class="arrow right"></a>
-</section>
-<app-footer></app-footer>
+<main #main>
+  <app-header></app-header>
+  <div class="wrappers-layer" perfectScrollbar (scroll)="onScroll($event)" [disabled]="scrollDisabled" #mainContent>
+    <div class="wp-layer" #mainContentLayer>
+      <section class="main-news">
+        <ng-container *ngFor="let post of allPosts; let i = index">
+          <a *ngIf="i == 0" [routerLink]="['/blog', post.alias]" class="big-item" [style.backgroundImage]="'url('+ post.image +')'">
+            <div>
+              <h2>{{post.title}}</h2>
+              <p class="paragraph">
+                {{post.date}}
+              </p>
+            </div>
+          </a>
+          <div class="item" *ngIf="i > 0">
+            <a [routerLink]="['/blog', post.alias]" class="item-title">
+              <div class="image">
+                <img src="{{post.image}}" alt="">
+                <div *ngIf="post.present_video" class="is-video"></div>
+              </div>
+              <h3>{{post.title}}</h3>
+            </a>
+            <p class="paragraph">{{post.date}}</p>
+          </div>
+        </ng-container>
+      </section>
+      <section class="pagination">
+        <span class="arrow left"></span>
+        <span class="active">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <span class="nav_ext">...</span>
+        <a href="#">15</a>
+        <a class="arrow right"></a>
+      </section>
+      <app-footer></app-footer>
+    </div>
+  </div>
+</main>

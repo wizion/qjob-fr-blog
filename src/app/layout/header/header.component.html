@@ -1,8 +1,8 @@
 <header>
   <div class="grid-container">
-    <div class="header-grid">
+    <div class="header-grid" #headerGrid>
       <div class="burger">
-        <!--<ui-hamburger [active]="sideMenuVisible" (activeChange)="toggleSideMenu($event)"></ui-hamburger>-->
+        <app-ui-hamburger [active]="sideMenuVisible" (activeChange)="toggleSideMenu($event)"></app-ui-hamburger>
       </div>
       <div class="logo">
         <a routerLink="/">
@@ -19,75 +19,48 @@
                 {{ 'MENU.HEADER.CREATE' | translate }}-->
               </a>
             </li>
-            <li><a routerLink="/tasks"><!--{{ 'MENU.HEADER.TASKS' | translate }}-->3</a></li>
-            <li><a routerLink="/executors"><!--{{ 'MENU.HEADER.EXECUTORS' | translate }}-->1</a></li>
-            <li *ngIf="loggedIn$ | async"><a><!--{{ 'MENU.HEADER.MY_TASKS' | translate }}-->2</a></li>
+            <li><a routerLink="/tasks">
+                <svg viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" _ngcontent-qjob-main-app-c3="" style="width: 12px; height: 12px;">
+                  <path d="M7 0H5V4.99995H0V6.99995H5V12H7V6.99995H12V4.99995H7V0Z" _ngcontent-qjob-main-app-c3=""></path>
+                </svg>
+                Создать задание </a></li>
+            <li><a routerLink="/executors">
+                Все задания</a></li>
+            <li><a routerLink="/some-link">
+                Исполнители</a></li>
           </ul>
         </nav>
       </div>
       <div class="actions">
-<!--        <qj-locale-switcher></qj-locale-switcher>
+        <!--
+        <div _ngcontent-qjob-main-app-c3="" class="actions">
+          <div _ngcontent-qjob-main-app-c12="" class="qj-locale-switcher head">
+            <div _ngcontent-qjob-main-app-c12="" class="value ng-tns-c12-3 ng-trigger ng-trigger-valueAnimation ng-star-inserted" style="opacity: 1; transform: translateY(0px);">Ru</div>
+            <div _ngcontent-qjob-main-app-c12="" class="arrow"><svg _ngcontent-qjob-main-app-c12="" class="ng-tns-c12-3" fill="none" height="8" viewBox="0 0 12 8" width="12" xmlns="http://www.w3.org/2000/svg">
+                <path _ngcontent-qjob-main-app-c12="" class="ng-tns-c12-3" d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417
+              -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM6 6L5.29289 6.70711L6 7.41421L6.70711
+              6.70711L6 6ZM11.7071 1.70711C12.0976 1.31658 12.0976 0.683417 11.7071 0.292893C11.3166 -0.0976311
+              10.6834 -0.0976311 10.2929 0.292893L11.7071 1.70711ZM0.292893 1.70711L5.29289 6.70711L6.70711
+              5.29289L1.70711 0.292893L0.292893 1.70711ZM6.70711 6.70711L11.7071 1.70711L10.2929 0.292893L5.29289
+              5.29289L6.70711 6.70711Z" fill="currentColor"></path>
+              </svg></div>
+          </div>
+          <div _ngcontent-qjob-main-app-c3="" class="qj-header-profile show-for-medium" _nghost-qjob-main-app-c7="">
+            <button _ngcontent-qjob-main-app-c14="" class="in-component-view ng-star-inserted" type="button">
+              <span _ngcontent-qjob-main-app-c14="" class="button-content-wrapper ng-star-inserted">
+<span _ngcontent-qjob-main-app-c14="" class="button-content">Вход</span></span></button>
+
+<button _ngcontent-qjob-main-app-c14="" class="in-component-view ng-star-inserted" type="button">
+<span _ngcontent-qjob-main-app-c14="" class="button-content-wrapper ng-star-inserted">
+
+<span _ngcontent-qjob-main-app-c14="" class="button-content">Регистрация</span></span></button>
+
+          </div>
+        </div>
+        <qj-locale-switcher></qj-locale-switcher>
         <qj-header-profile class="show-for-medium"></qj-header-profile>-->
       </div>
     </div>
   </div>
 </header>
-
-
-
-<!--
-<header class="main">
-	<div class="grid-continer">
-		<div class="header-container">
-			<div class="burger">
-				<app-ui-hamburger></app-ui-hamburger>
-			</div>
-
-			<div class="logo">
-			  <a routerLink="/">
-			  	<img src="./assets/images/mainlogo.png" alt="">
-			  </a>
-			</div>
-			<div class="menu">
-				<nav class="show-for-large">
-				    <ul >
-				        <li class="has-submenu">
-				            <a routerLink="/create">
-			                    <svg viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="width: 12px; height: 12px;">
-			                        <path d="M7 0H5V4.99995H0V6.99995H5V12H7V6.99995H12V4.99995H7V0Z" ></path>
-			                    </svg>
-				                 Создать задание </a>
-				        </li>
-				        <li ><a routerlink="/tasks" href="/tasks">Все задания</a></li>
-				        <li ><a routerlink="/executors" href="/executors">Исполнители</a></li>
-	
-				    </ul>
-				</nav>
-			</div>
-			<div class="actions">
-				<app-language-switcher></app-language-switcher>
-				<div class="profile-navigation">
-					<div class="button">
-						<button class="bordered">
-							<span class="button-content-wrapper">
-								<span class="button-content">
-									Вход
-								</span>
-							</span>
-						</button>
-					</div>
-					<div class="plain-button">
-						<button class="plain">
-							<span class="button-content-wrapper">
-								<span class="button-content">
-									Регистрация
-								</span>
-							</span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</header>--->
+<app-header-side-menu [visible]="sideMenuVisible" [anchorEl]="headerGrid" (widthChange)="sideMenuWidthChange($event)" (visibleChange)="toggleSideMenu($event)"></app-header-side-menu>
