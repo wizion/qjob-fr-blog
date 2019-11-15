@@ -76,7 +76,7 @@ header {
   }
 
   img {
-    height: rem-calc(36);
+    height: rem-calc(28);
     vertical-align: middle;
     display: none;
 
@@ -86,7 +86,7 @@ header {
     }
 
     @include breakpoint(xlarge up) {
-      height: rem-calc(40);
+      height: rem-calc(32);
     }
   }
 
@@ -281,5 +281,12 @@ nav {
 
   .qj-header-profile {
     margin-left: rem-calc(24);
+  }
+}
+
+
+@media screen and (max-width: 63.99875em) {
+  .show-for-large {
+    display: none !important;
   }
 }

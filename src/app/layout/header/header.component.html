@@ -6,7 +6,7 @@
       </div>
       <div class="logo">
         <a routerLink="/">
-          <img src="./assets/images/header-logo.png" alt="QJob">
+          <img src="./assets/images/logoblog.png" alt="QJob">
           <!--<svg-icon applyCss="applyCss" name="logo" [svgStyle]="{ 'width.px': '55', 'height.px': '22' }"></svg-icon>-->
         </a>
       </div>
@@ -64,3 +64,4 @@
   </div>
 </header>
 <app-header-side-menu [visible]="sideMenuVisible" [anchorEl]="headerGrid" (widthChange)="sideMenuWidthChange($event)" (visibleChange)="toggleSideMenu($event)"></app-header-side-menu>
+<div class="overlay" [class.visible]="sideMenuVisible"></div>
